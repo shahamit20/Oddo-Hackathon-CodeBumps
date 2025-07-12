@@ -1,11 +1,10 @@
 import React from 'react'
-
-const FreshFinds = () => {
+const Freshfinds = () => {
   const items = [
     {
       image: 'https://images.unsplash.com/photo-1541099649105-f69ad21f3246', // denim jacket
       condition: 'good',
-      title: 'Vintage Denim Pant',
+      title: 'Vintage Denim Jacket',
       size: 'M',
       user: 'Sarah K.',
       rating: 4.8,
@@ -108,4 +107,4 @@ const FreshFinds = () => {
   );
 };
 
-export default FreshFinds;
+export default Freshfinds;
