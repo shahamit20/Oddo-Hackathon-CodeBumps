@@ -16,7 +16,7 @@ app.use("/api/swaps", require("./routes/swapRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 
 
-mongoose.connect(process.env.PORT , {
+mongoose.connect(process.env.MONGO_URI , {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(()=>{
