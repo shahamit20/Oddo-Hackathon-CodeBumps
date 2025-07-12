@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // Optional: install lucide-react or use font-awesome
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
+  const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "Categorise", path: "/categorise" },
+  { name: "How It Works", path: "/how-it-works" },
+  { name: "Upload", path: "/upload" },
+  { name: "Dashboard", path: "/dashboard" },
+];
 
-  const navLinks = ["Home", "Browse", "Categorise", "How It Works", "Upload"];
 
   return (
     <nav className="bg-white shadow-md w-full ">
@@ -16,11 +24,11 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6 text-gray-800 font-medium">
           {navLinks.map((item) => (
             <a
-              key={item}
-              href="#"
+              key={item.name}
               className="hover:text-green-600 hover:underline transition duration-200"
+              onClick={() => navigate(item.path)}
             >
-              {item}
+              {item.name}
             </a>
           ))}
         </div>
