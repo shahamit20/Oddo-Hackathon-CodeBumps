@@ -1,9 +1,9 @@
-// import { Button } from "@/components/ui/button";
+
 import { ArrowRight } from "lucide-react";
 
 export default function HowItWorks() {
   return (
-    <section className="w-full bg-white py-16 px-6 text-center">
+    <section className="w-[99%] rounded-2xl bg-green-50 py-16 px-6 text-center">
       <h2 className="text-4xl font-bold text-gray-900 mb-2">How ReWear Works</h2>
       <p className="text-gray-500 text-lg mb-12">
         Simple, smart, and sustainable – join the fashion revolution
@@ -30,7 +30,7 @@ export default function HowItWorks() {
               "Earn points for every successful swap and redeem them for premium items",
           },
         ].map(({ step, title, description }) => (
-          <div key={step} className="flex flex-col items-center text-center">
+          <div key={step} className="flex flex-col bg-white shadow-md hover:shadow-green-300/100 rounded-2xl p-5 items-center text-center">
             <div className="bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl font-bold mb-4">
               {step}
             </div>
