@@ -18,5 +18,5 @@ mongoose.connect(process.env.PORT , {
     console.log(`Server running on PORT ${process.env.PORT}`)
    });
 }).catch((err)=>{
-    console.log("Error connecting to mongodb");
+    console.log("Error connecting to mongodb" , err);
 })
