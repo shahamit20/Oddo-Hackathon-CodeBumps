@@ -35,10 +35,10 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex space-x-4">
-          <button className="py-1 px-3 rounded border border-green-600 text-green-700 hover:bg-green-100 hover:underline transition">
+          <button onClick={() => navigate("/login")} className="py-1 px-3 rounded border border-green-600 text-green-700 hover:bg-green-100 hover:underline transition">
             Login
           </button>
-          <button className="px-4 py-1 rounded bg-green-600 text-white hover:bg-green-700 transition">
+          <button onClick={() => navigate("/signup")}  className="px-4 py-1 rounded bg-green-600 text-white hover:bg-green-700 transition">
             Signup
           </button>
         </div>
@@ -64,7 +64,7 @@ const Navbar = () => {
             </a>
           ))}
           <div className="flex space-x-4 mt-2">
-            <button className="py-1 px-3 w-full rounded border border-green-600 text-green-700 hover:bg-green-100 hover:underline transition">
+            <button  className="py-1 px-3 w-full rounded border border-green-600 text-green-700 hover:bg-green-100 hover:underline transition">
               Login
             </button>
             <button className="px-4 py-1 w-full rounded bg-green-600 text-white hover:bg-green-700 transition">

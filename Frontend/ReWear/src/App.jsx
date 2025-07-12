@@ -4,15 +4,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Laddingpage from './constructor/home/Laddingpage'
-
-
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 
 import Dashboard from './dashboard/Dashbord'
 
 import AddProduct from './constructor/Product/AddProduct';
-import CategoryFull from './constructor/home/CategoryFull';
+// import CategoryFull from './constructor/home/CategoryFull';
 
 
 function App() {
@@ -26,7 +24,9 @@ function App() {
         <Route path="/" element={<Laddingpage />} />
         <Route path="/dashboard" element={<Dashboard />} /> 
         <Route path="/upload" element={<AddProduct />} /> 
-        <Route path="/dashboard" element={<CategoryFull />} /> 
+        {/* <Route path="/categorise" element={<CategoryFull />} />  */}
+        <Route path="/signup" element={<Signup />} /> 
+        <Route path="/login" element={<Login />} /> 
       </Routes>
     </>  )
 }
