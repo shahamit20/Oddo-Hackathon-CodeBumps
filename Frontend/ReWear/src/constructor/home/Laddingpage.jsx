@@ -2,7 +2,8 @@ import React from 'react'
 import Navbar from '../other/Navbar'
 import Banner from './Banner'
 import Category from './Category'
-import FreshFinds from './Freshefind'
+import HowItWorks from './Howitwork'
+import Freshfinds from './Freshfind'
 
 function Laddingpage() {
   return (
@@ -12,7 +13,8 @@ function Laddingpage() {
 
    <Banner />
    <Category />
-   <FreshFinds />
+   <Freshfinds />
+  <HowItWorks/>
    </div>
       </> 
   )
