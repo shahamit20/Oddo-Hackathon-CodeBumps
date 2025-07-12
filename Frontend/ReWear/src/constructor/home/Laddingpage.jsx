@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../other/Navbar'
 import Banner from './Banner'
 import Category from './Category'
+import FreshFinds from './Freshefind'
 
 function Laddingpage() {
   return (
@@ -11,6 +12,7 @@ function Laddingpage() {
 
    <Banner />
    <Category />
+   <FreshFinds />
    </div>
       </> 
   )
