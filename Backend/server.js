@@ -9,6 +9,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+app.use("/api/auth", require("./routes/authRoutes"));
+app.use("/api/items", require("./routes/itemRoutes"));
+app.use("/api/swaps", require("./routes/swapRoutes"));
+app.use("/api/admin", require("./routes/adminRoutes"));
+
+
 mongoose.connect(process.env.PORT , {
     useNewUrlParser: true,
     useUnifiedTopology: true,

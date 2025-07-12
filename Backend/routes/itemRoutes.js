@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { protect } = require("../middleware/authMiddleware");
-const { additem, getAllitem, getMyitem, getItembyid } = require("../controllers/itemController");
+const { additem, getAllitem, getMyitem, getItembyid } = require("../controllers/itemControllers");
 
 router.post("/", protect, additem);
 router.get("/", getAllitem);
