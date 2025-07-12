@@ -4,17 +4,17 @@ import { Users, Recycle, TrendingUp } from 'lucide-react';
 function Banner() {
   const stats = [
     {
-      icon: <Users className="h-6 w-6 text-green-600" />,
+      icon: <Users className="h-8 w-8 text-green-600" />,
       value: "15K+",
       label: "Active Users",
     },
     {
-      icon: <Recycle className="h-6 w-6 text-green-600" />,
+      icon: <Recycle className="h-8 w-8 text-green-600" />,
       value: "50K+",
       label: "Items Swapped",
     },
     {
-      icon: <TrendingUp className="h-6 w-6 text-green-600" />,
+      icon: <TrendingUp className="h-8 w-8 text-green-600" />,
       value: "2.3T",
       label: "CO₂ Saved",
     },
@@ -53,21 +53,23 @@ function Banner() {
               Browse
             </a>
           </div>
-          <div className=" py-10 px-4">
+         
+        </div>
+      </div>
+
+       <div className=" py-10 px-4">
             <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
               {stats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center ">
-                  <div className="bg-green-100 p-4 rounded-full">
+                  <div className="bg-green-100 p-5 rounded-full">
                     {stat.icon}
                   </div>
                   <h3 className="text-2xl font-bold text-green-400">{stat.value}</h3>
-                  <p className="text-gray-300">{stat.label}</p>
+                  <p className="text-gray-900">{stat.label}</p>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-      </div>
     </>
   )
 }
