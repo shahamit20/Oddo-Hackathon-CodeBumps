@@ -7,7 +7,7 @@ const Navbar = () => {
   const navLinks = ["Home", "Browse", "Categorise", "How It Works", "Upload"];
 
   return (
-    <nav className="bg-white shadow-md w-full fixed top-0 z-50">
+    <nav className="bg-white shadow-md w-full ">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold text-green-500">ReWear</div>
