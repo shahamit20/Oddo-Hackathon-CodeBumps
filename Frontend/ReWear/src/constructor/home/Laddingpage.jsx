@@ -3,6 +3,7 @@ import Navbar from '../other/Navbar'
 import Banner from './Banner'
 import Category from './Category'
 import AddProduct from '../Product/AddProduct'
+import CategoryFull from '../home/CategoryFull'
 
 function Laddingpage() {
   return (

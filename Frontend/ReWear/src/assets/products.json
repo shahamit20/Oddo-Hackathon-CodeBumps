@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Classic White Shirt",
+    "size": "M",
+    "category": "Men",
+    "type": "Shirt",
+    "fabric": "Cotton",
+    "points": 120,
+    "uploadedAt": "2025-07-10T14:30:00Z",
+    "image": "https://via.placeholder.com/300x300?text=Shirt"
+  },
+  {
+    "id": 2,
+    "name": "Kid's Blue T-Shirt",
+    "size": "S",
+    "category": "Kids",
+    "type": "T-Shirt",
+    "fabric": "Synthetic",
+    "points": 80,
+    "uploadedAt": "2025-07-11T09:00:00Z",
+    "image": "https://via.placeholder.com/300x300?text=Tshirt"
+  },
+  {
+    "id": 3,
+    "name": "Women's Black Jeans",
+    "size": "L",
+    "category": "Women",
+    "type": "Pant",
+    "fabric": "Denim",
+    "points": 140,
+    "uploadedAt": "2025-07-09T18:00:00Z",
+    "image": "https://via.placeholder.com/300x300?text=Jeans"
+  },
+  {
+    "id": 4,
+    "name": "Unisex Running Shoes",
+    "size": "9",
+    "category": "Other",
+    "type": "Shoe",
+    "fabric": "Synthetic",
+    "points": 160,
+    "uploadedAt": "2025-07-08T12:45:00Z",
+    "image": "https://via.placeholder.com/300x300?text=Shoes"
+  }
+]
