@@ -1,7 +1,9 @@
 import React from 'react'
 import { Users, Recycle, TrendingUp } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
 
 function Banner() {
+  const navigate = useNavigate();
   const stats = [
     {
       icon: <Users className="h-8 w-8 text-green-600" />,
@@ -39,7 +41,7 @@ function Banner() {
           </h1>
           <div className="space-x-4">
             <a
-              href="#"
+              onClick={() => navigate("/upload")}
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded shadow transition"
             >
               Start Swapping
