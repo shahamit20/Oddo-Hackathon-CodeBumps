@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../other/Navbar'
 import Banner from './Banner'
 import Category from './Category'
+import AddProduct from '../Product/AddProduct'
 
 function Laddingpage() {
   return (
