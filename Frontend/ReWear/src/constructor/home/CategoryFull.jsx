@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import FilterBar from '../Product/FilterBar';
 import ProductCard from '../Product/ProductCard';
-import products from '../../assets/products.json';
+import products from '../../assets/products';
 console.log('Loaded Products:', products);
 
 const CATEGORIES = ['Men', 'Women', 'Kids', 'Other'];
-
-export default function CategoryFull() {
+function CategoryFull() {
   const [activeCategory, setActiveCategory] = useState('Men');
   const [search, setSearch] = useState('');
   const [sort, setSort] = useState('Latest');
@@ -69,3 +68,5 @@ export default function CategoryFull() {
     </div>
   );
 }
+
+export default CategoryFull;
