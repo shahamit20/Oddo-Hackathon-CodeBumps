@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../other/Navbar'
 
 function Laddingpage() {
   return (
-    <div className='text-red-500'>Laddingpage</div>
+   <>
+   <Navbar />
+   </> 
   )
 }
 
